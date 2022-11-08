@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            text-align: center;
+color:white
+        }
+    </style>
+</head>
+
+<body bgcolor="#004f82">
+    <h3>
+    </h3>
+    <script>
+        'use strict';
+        let fps = 0;
+        let game_running;
+        let show_fps;
+        let lastRun;
+        const h3 = document.querySelector('h3');
+        window.requestAnimFrame = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                function (callback, element) {
+                    window.setTimeout(function () {
+                        callback(+new Date);
+                    }, 1000 / 60);
+                };
+        })();
+        (function (window, document) {
+            game_running = true,
+                show_fps = true;
+
+            function showFPS() {
+                h3.innerText = fps.toPrecision(3) + " FPS";
+            }
+
+            function gameLoop() {
+                if (!lastRun) {
+                    lastRun = new Date().getTime();
+                    requestAnimFrame(gameLoop);
+                    return;
+                }
+                let delta = (new Date().getTime() - lastRun) / 1000;
+                lastRun = new Date().getTime();
+                fps = 1 / delta;
+                if (show_fps && lastRun % 2 === 0) {
+                    showFPS()
+                }
+                if (game_running) {
+                    requestAnimFrame(gameLoop)
+                };
+            }
+            gameLoop();
+        }(this, this.document))
+    </script>
+</body>
+
+</html>

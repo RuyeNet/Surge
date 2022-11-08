@@ -1,0 +1,23 @@
+{
+    "movieToken": "",
+    "resourcesWeb": "Sky电影",
+    "btWeb": "磁力搜",
+    "tvResources": 0,
+    "tvCustom":{
+        "🐠 HBO电影" : "http://218.202.220.2:5000/nn_live.m3u8?id=HBO",
+        "🐠 战旗电影" : "http://dlhls.cdn.zhanqi.tv/zqlive/53346_ESoth.m3u8",
+        "🐠 电影阁" : "http://dlhls.cdn.zhanqi.tv/zqlive/7032_0s2qn.m3u8",
+        "🐠 好莱坞电影" : "http://tx.hls.huya.com/huyalive/30765679-2484192572-10669525853706125312-2847687498-10057-A-1521100607-1.m3u8",
+        "🐠 陈翔六点半" : "https://aldirect.hls.huya.com/huyalive/94525224-2655537474-11405446604132450304-2704233350-10057-A-0-1_1200.m3u8",
+        "🐠 环球电视台" : "http://live-cdn.xzxwhcb.com/hls/r86am856.m3u8",
+        "🐠 新电影" : "http://dlhls.cdn.zhanqi.tv/zqlive/49858_wgGj1.m3u8",
+        "🐠 FOX高清电影台": "http://aldirect.hls.huya.com/huyalive/94525224-2467341872-10597152648291418112-2789274550-10057-A-0-1_1200.m3u8"
+    },
+    "tvSubscibe":{
+        "🐳 所有频道" : "https://raw.githubusercontent.com/GL8666/m3u8_channels/master/channels.json",
+        "🐳 推荐频道-大陆" : "https://www.jstudio.win/cn.json",
+        "🐳 推荐频道-港澳台" : "https://www.jstudio.win/hktw.json",
+        "🐳 推荐频道-日韩" : "https://www.jstudio.win/jpkr.json",
+        "🐳 推荐频道-欧美" : "https://www.jstudio.win/us.json"
+    }
+}

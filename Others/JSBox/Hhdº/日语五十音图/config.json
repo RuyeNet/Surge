@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "日语五十音图",
+    "url": "",
+    "version": "1.0.0",
+    "author": "Hhdº",
+    "website": "",
+    "types": 0
+  },
+  "settings": {
+    "minSDKVer": "1.1.0",
+    "minOSVer": "10.0.0",
+    "idleTimerDisabled": false,
+    "autoKeyboardEnabled": false,
+    "keyboardToolbarEnabled": false,
+    "rotateDisabled": false
+  },
+  "widget": {
+    "height": 0,
+    "tintColor": "",
+    "iconColor": ""
+  }
+}

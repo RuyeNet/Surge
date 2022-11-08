@@ -1,0 +1,15 @@
+{
+    "theme": "Auto",
+    "category": "Categories",
+    "listTheme": "Store",
+    "country": "US",
+    "language": "EN",
+    "sortby": "Name",
+    "A-Z": "ASC",
+    "customCategories": [
+        "Favorite",
+        "Wish List"
+    ],
+    "update": true,
+    "cancelBt": false
+}

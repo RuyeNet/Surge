@@ -1,0 +1,6 @@
+"alert_title_warning" = "提示";
+"alert_message_dismiss" = "点击「继续」并上滑关闭通知中心以继续删除。";
+"alert_button_continue" = "继续";
+"alert_button_cancel" = "取消";
+"button_title_delete" = "删除";
+"toast_deleted" = "已删除";

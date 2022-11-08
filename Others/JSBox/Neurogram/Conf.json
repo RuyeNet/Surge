@@ -1,0 +1,18 @@
+{
+    "Sky Movie": {
+        "version": "4.5(181210)",
+        "link": "https://raw.githubusercontent.com/Neurogram-R/JSBox/master/Sky%20Movie.box"
+    },
+    "Surge³": {
+        "version": "0.9.2(181204)"
+    },
+    "Cinema Club": {
+        "version": "1.0.0(190326)",
+        "link": "https://raw.githubusercontent.com/Neurogram-R/JSBox/master/Neurogram/Cinema%20Club/.output/Cinema%20Club.box"
+    },
+    "App Collector": {
+        "version": "1.0.0(17072019)",
+        "link": "https://raw.githubusercontent.com/Neurogram-R/JSBox/master/Neurogram/App%20Collector/.output/App%20Collector.box"
+    }
+
+}

@@ -1,0 +1,104 @@
+#!name=Creak Apps
+#!desc=Creak Apps with Script for Surge iOS
+#!system=ios
+
+[Panel]
+Net_info_panel=title="网络状态",content="请刷新",style=info,script-name=Net_info_panel
+
+Nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
+
+#Youtube_premium_check = script-name=youtube_premium_check, title="YouTube Premium 解锁检测", update-interval=1
+
+[Script]
+Net_info_panel=script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/Net_info_panel.js,type=generic
+
+Nf_check = type=generic, script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/nf_check.js?version=1633074636266, argument=title=Netflix 解锁检测
+
+#Youtube_premium_check = type=generic, script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/youtube_premium_check.js?version=1633074636264, argument=title=YouTube 解锁检测
+
+
+# ---(By guajie)---
+# > kuwo
+KuWoMusicDownload = type=http-request,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/KuWoMusicDownload.js
+Kuwo = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/Kuwo.js
+Kuwo换肤 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/theme.js
+# ------
+
+# ---(By guajie)---
+# > wenxin110
+微信外链 = type=http-response,pattern=^https\:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/weixin-external-links.js,script-update-interval=0
+# ------
+
+# ---(By guajie)---
+# > TestFlight
+Tf download = type=http-request,requires-body=1,max-size=0,pattern=^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/TF_Downloadnew.js
+# ------
+
+# ---(By guajie)---
+# > Pdf_Expert7
+Pdf_Expert7 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/license\.pdfexpert\.com\/api\/1.0\/pdfexpert6\/subscription\/(check|refresh),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/pdfexpert.js
+# ------
+
+# ---(By guajie)---
+# > Ykb
+ykb = type=http-response,requires-body=1,max-size=0,pattern=https://api.yikaobang.com.cn/*,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/ykb.js
+# ------
+
+# ---(By guajie)---
+# > yyzs
+Yyzs = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/yyzs2021.js
+# ------
+
+# ---(By guajie)---
+# > Display jd historical price
+#Display jd historical price = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/jd_price_lite2021.js
+# ------
+
+# ---(By guajie)---
+# > Scanner Pro
+Scanner Pro = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/2\.0\/scanner\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/sp.js
+# ------
+
+# ---(By guajie)---
+# > PolarisOffice Unlock Annual Subscriptions
+PolarisOffice Unlock Annual Subscriptions = type=http-response,pattern=^https?:\/\/api\.polarisoffice\.com\/api\/.*\/account\/userinfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/PolarisOffice.js
+# ------
+
+# ---(By guajie)---
+# > JD | TB Price comparison
+JD = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
+# TB = type=http-request,requires-body=1,max-size=0,pattern=^http://.+/amdc/mobileDispatch,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
+# TB = type=http-response,requires-body=1,max-size=0,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/JD_TB_Price_comparison.js
+# ------
+
+# ---(By guajie)---
+# >  Location-Based Siri Suggestions for Spotlight & Look Up & Safari
+[Rule]
+# > Look Up (Only for Wikipedia@macOS, Surge Enhance Mode enabled required)
+PROCESS-NAME,LookupViewService,Apple
+PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService,Apple
+DOMAIN,lookup-api.apple.com,Apple
+DOMAIN,lookup-api.apple.com.edgekey.net,Apple
+DOMAIN,e16991.b.akamaiedge.net,Apple
+[URL Rewrite]
+# Redirect Siri Suggestions Service 
+# Bag (iOS/macOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/bag.*)(cc=[A-Z]{2})(.*) $1com$3cc=TW$5 header
+# General Spotlight & Look Up Search (iOS/macOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/search.*)(cc=[A-Z]{2})(.*) $1com$3cc=TW$5 header
+# General Info Card (macOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=[^kg][^tv][^movies])(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9 header
+# Siri Knowledge(Siri资料) Card (Spotlight@macOS & Siri@iOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=(?:kgcn|kg))(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9 header
+# Siri Knowledge(Siri资料) Card (Spotlight@iOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/search.*)(cardDomain=kg)(.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*) $1com$3$4$5card_locale=zh-Hans_CN$7cc=TW$9 header
+# tv Movies and TV Show Card (macOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=(?:tv|movies))(.*)(q=(?:tv|movies)%3A)(.*)(%2F)([a-z]{2}-[A-Z]{2})(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9$10$11$12zh-TW$14 header
+
+# ---(By guajie)---
+# > Wps Unlock 
+http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/Wps.js
+# ------
+
+[MITM]
+hostname = %APPEND% vip1.kuwo.cn, musicpay.kuwo.cn, weixin110.qq.com, testflight.apple.com, license.pdfexpert.com, api.yikaobang.com.cn, newdrugs.dxy.cn, api.m.jd.com, *.polarisoffice.com, trade-acs.m.taobao.com, -api-glb-usw2b.smoot.apple.com, *.smoot.apple.com, *.smoot.apple.cn, lookup-api.apple.com, account.wps.cn

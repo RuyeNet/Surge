@@ -1,0 +1,21 @@
+# > Speedtest
+USER-AGENT,SpeedTest*,DIRECT
+PROCESS-NAME,/Applications/Speedtest.app/Contents/MacOS/Speedtest,DIRECT
+DOMAIN-KEYWORD,speedtest,DIRECT
+DOMAIN-KEYWORD,speed,DIRECT
+DOMAIN-KEYWORD,ookla,DIRECT
+DOMAIN-SUFFIX,noc.vvsu.ru,DIRECT
+DOMAIN-SUFFIX,vvosp1.dv.rt.ru,DIRECT
+DOMAIN-SUFFIX,wlvpn.com,DIRECT
+DOMAIN-SUFFIX,ooklaserver.net,DIRECT
+DOMAIN,fast.rockisland.net,DIRECT
+DOMAIN-SUFFIX,88-f.net,DIRECT
+DOMAIN,st.pautina-telecom.ru,DIRECT
+DOMAIN-SUFFIX,goodnet.su,DIRECT
+DOMAIN-SUFFIX,a-mo.net,DIRECT
+
+# > Fast
+DOMAIN-SUFFIX,fast.com,DIRECT
+
+# > Speed Test by Cloudflare,DIRECT
+DOMAIN-SUFFIX,speed.cloudflare.com,DIRECT

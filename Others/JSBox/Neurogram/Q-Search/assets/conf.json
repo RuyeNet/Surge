@@ -1,0 +1,59 @@
+{
+    "b": {
+        "title": "百度搜索",
+        "url": "https://www.baidu.com/s?wd=%@"
+    },
+    "bi": {
+        "title": "bing 词典查询",
+        "url": "https://cn.bing.com/dict/search?q=%@"
+    },
+    "g": {
+        "title": "Google 搜索",
+        "url": "https://www.google.com/search?q=%@"
+    },
+    "gh": {
+        "title": "GitHub 搜索",
+        "url": "https://github.com/search?q=%@"
+    },
+    "gm": {
+        "title": "Google 图片搜索",
+        "url": "https://www.google.com/search?&tbm=isch&q=%@"
+    },
+    "ip": {
+        "title": "ip 查询",
+        "url": "http://www.ip138.com/ips138.asp?ip=%@"
+    },
+    "jd": {
+        "title": "京东搜索",
+        "url": "https://so.m.jd.com/ware/search.action?keyword=%@"
+    },
+    "sp": {
+        "title": "少数派搜索",
+        "url": "https://sspai.com/search/article?q=%@"
+    },
+    "te": {
+        "title": "Google 中翻英",
+        "url": "https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%@"
+    },
+    "tb": {
+        "title": "淘宝搜索",
+        "url": "https://s.m.taobao.com/h5?&q=%@"
+    },
+    "tc": {
+        "title": "Google 英翻中",
+        "url": "https://translate.google.com/#view=home&op=translate&sl=en&tl=zh-CN&text=%@"
+    },
+    "yd": {
+        "title": "有道翻译",
+        "url": "http://dict.youdao.com/search?q=%@"
+    },
+    "yt": {
+        "title": "Youtube 搜索",
+        "url": "https://m.youtube.com/results?q=%@"
+    },
+    "zh": {
+        "title": "知乎搜索",
+        "url": "https://www.zhihu.com/search?type=content&q=%@"
+    },
+    "@default": "b"
+}

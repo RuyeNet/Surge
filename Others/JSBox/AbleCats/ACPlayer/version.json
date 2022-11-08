@@ -1,0 +1,17 @@
+{
+	"app": "2.4.0",
+	"scripts": [
+		"control.js",
+		"files.js",
+		"updata.js",
+		"deals.js",
+		"donate.js",
+		"views.js",
+		"keyboard.js",
+		"CatsViews/UIViews.js",
+		"CatsViews/loading.html",
+		"CatsViews/socketLogger.js",
+		"CatsViews/rainbowText.html",
+		"CatsViews/video/index.html"
+	]
+}

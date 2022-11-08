@@ -1,0 +1,22 @@
+#!name=定时任务
+#!desc=签到、提醒等定时任务  @guajie
+
+
+
+[Script]
+吾爱签到 = type=cron,cronexp=38 11 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/52pojie.js
+
+京豆变动通知 = type=cron,cronexp=20 9 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/jd_bean_change.js
+
+爱奇艺签到 = type=cron,cronexp=45 11 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/iQIYI.js
+
+AppMonitor = type=cron,cronexp=0 12 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/AppMonitor.js
+
+华住会 = type=cron,cronexp=49 11 * * *,script-path=https://raw.githubusercontent.com/guajie/Surge/master/Scripts/hzh.js
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+"alert_title_warning" = "Warning";
+"alert_message_dismiss" = "Tap「Continue」and close the notification center to delete assets.";
+"alert_button_continue" = "Continue";
+"alert_button_cancel" = "Cancel";
+"button_title_delete" = "Delete";
+"toast_deleted" = "Deleted";

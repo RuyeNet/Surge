@@ -1,0 +1,23 @@
+{
+  "settings" : {
+    "minOSVer" : "10.3.0",
+    "minSDKVer" : "1.15.0",
+    "idleTimerDisabled" : true,
+    "autoKeyboardEnabled" : false,
+    "keyboardToolbarEnabled" : true,
+    "rotateDisabled" : true
+  },
+  "info" : {
+    "version" : "2.3.1",
+    "author" : "AbleCats",
+    "website" : "",
+    "url" : "http:\/\/js.able.cat\/ACPlayer\/.output\/ACPlayer.box",
+    "types" : 15,
+    "name" : "ACPlayer"
+  },
+  "widget" : {
+    "tintColor" : "",
+    "iconColor" : "",
+    "height" : 225
+  }
+}
