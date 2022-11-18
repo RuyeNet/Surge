@@ -1,5 +1,0 @@
-# > TestFlight
-USER-AGENT,TestFlight*,PROXY
-DOMAIN-KEYWORD,testflight,PROXY
-DOMAIN,beta.apple.com,PROXY
-DOMAIN,testflight.apple.com,PROXY
